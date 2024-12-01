@@ -91,7 +91,7 @@
         </div>
         <div class="flex px-l py-l flex-column"
             style="justify-content:space-between;align-items:center;flex:1;width:100%">
-            <div></div>
+            <div style=" position: relative; top: -40px;">
             <style>
                 @font-face {
                     font-family: head;
@@ -116,12 +116,13 @@
 
             </style>
             <h1 class="kappy-title">
-                <img src="/3.png" style="width: 200px;" alt="">
+                <img src="/logo.png" style="width: 300px;" alt="">
             </h1>
             <p 
-          class="kappy-title" style="color: #fff;  font-family: head;">
+          class="kappy-title" style="color: #fff; position: relative; top: -40px; font-family: head;">
           Embrace the mission of conquering Mars!
             </p>
+        </div>
             <div>
                 <img src="/2.png" class="floating" style="width: 70px; position: absolute; left: 30px; top: 130px;" alt="">
             </div>
@@ -130,10 +131,46 @@
             </div>
             <div class="flex kappy-logo-wrapper" style="width:100%"
             >
-            
+            <style>
+          
+.floating-space-object {
+  font-size: 5rem; /* Adjust size of your object */
+  animation: float 6s infinite ease-in-out, rotate 12s infinite linear;
+  transform-origin: center;
+}
+
+/* Float animation */
+@keyframes float {
+  0% {
+    transform: translate(0, 0) scale(1);
+  }
+  25% {
+    transform: translate(-10px, 10px) scale(1.1);
+  }
+  50% {
+    transform: translate(10px, -10px) scale(0.9);
+  }
+  75% {
+    transform: translate(-10px, -10px) scale(1.05);
+  }
+  100% {
+    transform: translate(0, 0) scale(1);
+  }
+}
+
+/* Slow rotation */
+@keyframes rotate {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(90deg);
+  }
+}
+            </style>
             <img alt="Kappy" loading="lazy" width="150"
-                    height="150" decoding="async" data-nimg="1" class="kappy-logo" style="color:transparent"
-                    src="/images/png.png"
+                    height="150" decoding="async" data-nimg="1" class="kappy-logo floating-space-object" style="color:transparent"
+                    src="/sq.png"
                     >
                 
                 </div>
