@@ -1,6 +1,6 @@
 document.addEventListener("DOMContentLoaded", function() {
-    const leafCount = 10; // Number of coin
-    const leafSpeed = 10; // Speed of coin (lower number is faster)
+    const leafCount = 8; // Number of coin
+    const leafSpeed = 30; // Speed of coin (lower number is faster)
     const coin = [];
 
     for (let i = 0; i < leafCount; i++) {
